@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh "docker build -t webserver ."
+                sh "DOCKER_HOST=tcp://localhost:2375 docker build -t webserver ."
             }
         }
 
