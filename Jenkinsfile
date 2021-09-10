@@ -12,7 +12,7 @@ pipeline {
         {
             steps
             {
-                sh "DOCKER_HOST=tcp://localhost:2375 docker run -it --rm -d -p 9000:80 --name webpage4 webserver"
+                sh "DOCKER_HOST=tcp://localhost:2375 docker run -it --rm -d -p 9000:80 --name webpage_final webserver"
             }
         }
     }
